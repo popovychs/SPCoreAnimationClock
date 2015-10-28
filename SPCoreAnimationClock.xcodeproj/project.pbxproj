@@ -13,6 +13,10 @@
 		3E906A801BE13D4100B89663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E906A7E1BE13D4100B89663 /* Main.storyboard */; };
 		3E906A821BE13D4100B89663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E906A811BE13D4100B89663 /* Assets.xcassets */; };
 		3E906A851BE13D4100B89663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E906A831BE13D4100B89663 /* LaunchScreen.storyboard */; };
+		3E906A8F1BE1567E00B89663 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906A8C1BE1567E00B89663 /* apple.png */; };
+		3E906A901BE1567E00B89663 /* appleLogoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906A8D1BE1567E00B89663 /* appleLogoWhite.png */; };
+		3E906A911BE1567E00B89663 /* gitLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E906A8E1BE1567E00B89663 /* gitLogo.jpg */; };
+		3E906A941BE159EC00B89663 /* SPClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E906A931BE159EC00B89663 /* SPClock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,17 @@
 		3E906A761BE13D4100B89663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E906A781BE13D4100B89663 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E906A791BE13D4100B89663 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E906A7B1BE13D4100B89663 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E906A7C1BE13D4100B89663 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E906A7B1BE13D4100B89663 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = SPClasses/SPController/ViewController.h; sourceTree = "<group>"; };
+		3E906A7C1BE13D4100B89663 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = SPClasses/SPController/ViewController.m; sourceTree = "<group>"; };
 		3E906A7F1BE13D4100B89663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E906A811BE13D4100B89663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E906A841BE13D4100B89663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E906A861BE13D4100B89663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E906A8C1BE1567E00B89663 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		3E906A8D1BE1567E00B89663 /* appleLogoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appleLogoWhite.png; sourceTree = "<group>"; };
+		3E906A8E1BE1567E00B89663 /* gitLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gitLogo.jpg; sourceTree = "<group>"; };
+		3E906A921BE159EC00B89663 /* SPClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPClock.h; path = SPClasses/SPModel/SPClock.h; sourceTree = "<group>"; };
+		3E906A931BE159EC00B89663 /* SPClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPClock.m; path = SPClasses/SPModel/SPClock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,10 @@
 		3E906A741BE13D4100B89663 /* SPCoreAnimationClock */ = {
 			isa = PBXGroup;
 			children = (
+				3E906A951BE159F600B89663 /* SPModel */,
 				3E906A781BE13D4100B89663 /* AppDelegate.h */,
 				3E906A791BE13D4100B89663 /* AppDelegate.m */,
-				3E906A7B1BE13D4100B89663 /* ViewController.h */,
-				3E906A7C1BE13D4100B89663 /* ViewController.m */,
+				3E906A961BE1710900B89663 /* SPController */,
 				3E906A7E1BE13D4100B89663 /* Main.storyboard */,
 				3E906A811BE13D4100B89663 /* Assets.xcassets */,
 				3E906A831BE13D4100B89663 /* LaunchScreen.storyboard */,
@@ -74,9 +83,30 @@
 		3E906A751BE13D4100B89663 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E906A8C1BE1567E00B89663 /* apple.png */,
+				3E906A8D1BE1567E00B89663 /* appleLogoWhite.png */,
+				3E906A8E1BE1567E00B89663 /* gitLogo.jpg */,
 				3E906A761BE13D4100B89663 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E906A951BE159F600B89663 /* SPModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E906A921BE159EC00B89663 /* SPClock.h */,
+				3E906A931BE159EC00B89663 /* SPClock.m */,
+			);
+			name = SPModel;
+			sourceTree = "<group>";
+		};
+		3E906A961BE1710900B89663 /* SPController */ = {
+			isa = PBXGroup;
+			children = (
+				3E906A7B1BE13D4100B89663 /* ViewController.h */,
+				3E906A7C1BE13D4100B89663 /* ViewController.m */,
+			);
+			name = SPController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,10 @@
 			files = (
 				3E906A851BE13D4100B89663 /* LaunchScreen.storyboard in Resources */,
 				3E906A821BE13D4100B89663 /* Assets.xcassets in Resources */,
+				3E906A8F1BE1567E00B89663 /* apple.png in Resources */,
 				3E906A801BE13D4100B89663 /* Main.storyboard in Resources */,
+				3E906A901BE1567E00B89663 /* appleLogoWhite.png in Resources */,
+				3E906A911BE1567E00B89663 /* gitLogo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +185,7 @@
 				3E906A7D1BE13D4100B89663 /* ViewController.m in Sources */,
 				3E906A7A1BE13D4100B89663 /* AppDelegate.m in Sources */,
 				3E906A771BE13D4100B89663 /* main.m in Sources */,
+				3E906A941BE159EC00B89663 /* SPClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
