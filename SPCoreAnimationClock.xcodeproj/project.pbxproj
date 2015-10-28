@@ -71,9 +71,8 @@
 				3E906A781BE13D4100B89663 /* AppDelegate.h */,
 				3E906A791BE13D4100B89663 /* AppDelegate.m */,
 				3E906A961BE1710900B89663 /* SPController */,
-				3E906A7E1BE13D4100B89663 /* Main.storyboard */,
+				3E906A971BE1719600B89663 /* SPView */,
 				3E906A811BE13D4100B89663 /* Assets.xcassets */,
-				3E906A831BE13D4100B89663 /* LaunchScreen.storyboard */,
 				3E906A861BE13D4100B89663 /* Info.plist */,
 				3E906A751BE13D4100B89663 /* Supporting Files */,
 			);
@@ -107,6 +106,15 @@
 				3E906A7C1BE13D4100B89663 /* ViewController.m */,
 			);
 			name = SPController;
+			sourceTree = "<group>";
+		};
+		3E906A971BE1719600B89663 /* SPView */ = {
+			isa = PBXGroup;
+			children = (
+				3E906A7E1BE13D4100B89663 /* Main.storyboard */,
+				3E906A831BE13D4100B89663 /* LaunchScreen.storyboard */,
+			);
+			name = SPView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

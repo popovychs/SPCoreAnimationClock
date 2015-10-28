@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "SPClock.h"
 
 @interface ViewController ()
+
+@property (weak,nonatomic) IBOutlet UIView * clockView;
+@property (strong,nonatomic) SPClock * analogClock;
 
 @end
 
@@ -16,7 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    SPClock * myClock;
+    
+    [myClock startUpdates];
 }
 
 - (void)didReceiveMemoryWarning {
