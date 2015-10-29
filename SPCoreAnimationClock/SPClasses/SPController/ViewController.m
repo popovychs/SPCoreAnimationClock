@@ -21,14 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SPClock * myClock;
-    
-    [myClock startUpdates];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.analogClock startUpdates];
 }
 
 @end

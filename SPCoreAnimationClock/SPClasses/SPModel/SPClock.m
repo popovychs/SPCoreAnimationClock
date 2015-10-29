@@ -10,9 +10,18 @@
 
 @implementation SPClock
 
-- (id) initWithCoder:(NSCoder *)aDecoder
+//- (id) initWithCoder:(NSCoder *)aDecoder
+//{
+//    if ((self = [super initWithCoder:aDecoder])) {
+//        [self setUpClock];
+//    }
+//    return self;
+//}
+
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    if ((self = [super initWithCoder:aDecoder])) {
+    self = [super initWithFrame:frame];
+    if (self) {
         [self setUpClock];
     }
     return self;
