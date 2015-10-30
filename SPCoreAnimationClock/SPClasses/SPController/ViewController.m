@@ -21,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setClock];
+}
+
+- (void) setClock
+{
+    CGRect clockFrame = CGRectMake(0, 0, 250, 250);
+    self.analogClock = [[SPClock alloc] initWithFrame:clockFrame];
+    
+    [self.clockView addSubview:self.analogClock];
     [self.analogClock startUpdates];
 }
 
